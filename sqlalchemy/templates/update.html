@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>Update data</title>
+</head>
+<body>
+    <div class="container">
+        <form action="{{url_for('update_item')}}" method="POST">
+            <input type="text" name="new_item" value="{{todo_item}}">
+            <input type="submit" value="Update Item" id="update-btn">
+       </form>
+    </div>
+</body>
+</html>
